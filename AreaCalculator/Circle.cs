@@ -7,11 +7,11 @@ public class Circle: Shape
     public double Radius { get; set; }
     public override double CalculateArea()
     {
-        return Math.PI * (Math.Pow(Radius, 2));
+        return Math.Round( Math.PI * Math.Pow(Radius, 2), 2);
     }
 
     public override double CalculatePerimeter()
     {
-        return 2 * Math.PI * Radius;
+        return Math.Round( 2 * Math.PI * Radius, 2);
     }
 }

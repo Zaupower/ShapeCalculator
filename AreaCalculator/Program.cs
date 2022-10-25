@@ -11,7 +11,7 @@ Determine which of these classes can be abstract.
 Shape class can be abstract because there are no need to creat objects type Shape
 */
 
-using AreaCalculator;
+namespace AreaCalculator;
 
 class Program
 {
@@ -21,20 +21,21 @@ class Program
         t.SideA = 2;
         t.SideB = 3;
         t.SideC = 4;
+        Console.WriteLine("Triangle Area: " + t.CalculateArea());
+        Console.WriteLine("Triangle Perimeter: " + t.CalculatePerimeter());
         
-        Console.WriteLine(t.CalculateArea());
-        Console.WriteLine(t.CalculatePerimeter());
-        
+        Console.WriteLine("");
 
         Square s = new Square();
         s.Side = 4;
-        Console.WriteLine(s.CalculateArea());
-        Console.WriteLine(s.CalculatePerimeter());
+        Console.WriteLine("Square Area: "+s.CalculateArea());
+        Console.WriteLine("Square Perimeter: "+s.CalculatePerimeter());
 
+        Console.WriteLine("");
+        
         Circle c = new Circle();
         c.Radius = 10;
-        Console.WriteLine(c.CalculateArea());
-        Console.WriteLine( c.CalculatePerimeter());
-       
+        Console.WriteLine("Circle Area: " + c.CalculateArea());
+        Console.WriteLine("Circle Perimeter: " + c.CalculatePerimeter());
     }
 }

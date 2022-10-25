@@ -6,11 +6,11 @@ public class Square: Shape
 
     public override double CalculateArea()
     {
-        return this.Side * Side;
+        return Math.Round(this.Side * Side, 2);
     }
 
     public override double CalculatePerimeter()
     {
-        return this.Side * 4;
+        return Math.Round(this.Side * 4, 2);
     }
 }

@@ -10,14 +10,13 @@ public class Triangle:Shape
     public override double CalculateArea()
     {
         double semiperimeter = (SideA + SideB + SideC) / 2;
-        
         var area = Math.Sqrt(semiperimeter * (semiperimeter - SideA) * (semiperimeter - SideB) * (semiperimeter - SideC));
-        return area;
+        return Math.Round(area, 2);
     }
 
     
     public override double CalculatePerimeter()
     {
-        return SideA + SideB + SideC;
+        return Math.Round(SideA + SideB + SideC, 2);
     }
 }
